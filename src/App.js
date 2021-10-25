@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from 'react'
+import React from "react"
+import { useEffect } from 'react';
 
 function App() {
 
@@ -9,7 +11,9 @@ function App() {
   const [four, newFour] = useState(false)
 
 
-
+  useEffect(() => {
+    document.title = "GHOST!"
+  }, [])
 
 
 
@@ -69,7 +73,7 @@ function App() {
     <div className="App">
       <div id="header">
         <div className='navBar'>
-          <a href='#nice'>Home</a>
+          <a href='#nice'><mark>   Home   </mark></a>
         </div>
       </div>
       <div id="container">
@@ -196,10 +200,8 @@ function App() {
                     To get away from my inhuman race with hearts of Satans{'\n'}
                     Took off my Mason Martin's, lay on back like Martha Mason{'\n'}
                     Smoke away my eye and lung 'til later die at 71{'\n'}
-                    {'\n'}
-                    {'\n'}
                   </p>
-                  <h2>{"\t"}  Power</h2>
+                  <h2>{"\t"}  Pharsyde</h2>
                   <p>
                     Gentrification split the nation that I once was raised in {'\n'}
                     I don't recall no friendly neighbors face on my upraising{'\n'}
